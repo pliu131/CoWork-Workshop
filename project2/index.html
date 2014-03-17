@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <style>
+  header {
+    text-align: center;
+    background: url("img/headerbackground.jpg");
+    background-size: cover;
+    color: white;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  a {
+    color: white;
+  }
+  img {
+    height: 300px;
+    width: 300px;
+    margin: 40px 0px 0px 0px;
+    border: 7px solid white;
+    border-radius: 20px;
+  }
+  ul {
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+  }
+  li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+  }
+  article {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto; /* best trick for centering content */
+  }
+  @media (max-width: 500px) {
+    h1 {
+      padding: 5px;
+      font-size: 36px;
+    }
+    li {
+      padding: 5px;
+      display: block;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/peter.jpeg">
+    <h1>Peter's Blog</h1>
+    <ul>
+      <li>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </header>
+
+  <article>
+    <h2>Lorem ipsum dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil illo placeat omnis recusandae dignissimos aliquam neque odio culpa cum modi! Explicabo consequatur ullam rem assumenda eum illum cupiditate optio. Impedit.</p>
+    <button>Like</button>
+  </article>
+  
+  <article>
+    <h2>Lorem ipsum dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil illo placeat omnis recusandae dignissimos aliquam neque odio culpa cum modi! Explicabo consequatur ullam rem assumenda eum illum cupiditate optio. Impedit.</p>
+    <button>Like</button>
+  </article>
+  
+  <article>
+    <h2>Lorem ipsum dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil illo placeat omnis recusandae dignissimos aliquam neque odio culpa cum modi! Explicabo consequatur ullam rem assumenda eum illum cupiditate optio. Impedit.</p>
+    <button>Like</button>
+  </article>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script>
+    $('button').on('click', function() {
+      alert("clicked!")
+    })
+  </script>
+</body>
