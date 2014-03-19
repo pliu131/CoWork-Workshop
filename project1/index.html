@@ -2,13 +2,20 @@
 <head>
   <title>Peter Liu</title>
   <style>
-    body {
-      text-align: center;
+    body, html {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    div {
+      margin: 0;
+      background-repeat: no-repeat;
+      background-position: 50% 0px;
+      height: 100%;
+    }
+    #slide-1 {
       background: url("img/background.jpg");
       background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
     }
     p {
       font-size: 22px;
@@ -27,9 +34,15 @@
   </style>
 </head>
 <body>
-  <img src="img/peter.png">
-  <h1>Peter Liu</h1>
-  <p>Hi! I'm Peter Liu, a NYC-based web developer! Say hello!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+    <div id="slide-1"
+      data-center="background-position: 50% 0px"
+      data-top-bottom="background-position: 50% -100px"
+      data-anchor-target="#anchor-1"
+    >
+    </div>
+  <div id="slide-2"></div>
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
 </body>
